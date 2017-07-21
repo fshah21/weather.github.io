@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Lemonada:600,700" rel="stylesheet">
+<div class = "container-fluid">
+  <div class = "text-center">
+    <h2>Local Weather</h2>
+  </div>
+  <div class = "text-center">
+      <h1 class = "animated pulse">What is the weather like ?</h1>
+  </div>
+   <div class = "row" style = "padding-top : 20px">
+     <p id = "menu" >Location:</p><p id = "info" class = "animated fadeIn" ></p>
+  </div>
+  <div class = "row">
+    <p id = "menu">Temperature:</p><p id = "temp1" ></p>
+     <button onclick = "switches1()" id = "but1">switch to fahrenheit</button>
+  </div>
+  <div class = "row">
+    <p id = "menu">Weather:</p><p id = "desc1"></p>
+  </div>
+  <div class = "text-center">
+   <h1 class = "animated pulse">Know Weather of Other City</h1>
+  </div>
+  <div id = "searchbox" class = "row">
+    <form id = "form1" >
+    <input type = "text" placeholder = "Enter city" name = "entered" id ="enter"></input>
+  </form>
+   <button id ="searchbut" onclick="search()">Search</button>
+</div>
+<div class = "row">
+  <p id = "menu">Temperature:</p><p id = "temp2"></p>
+     <button onclick="switches2()"  id = "but2">switch to fahrenheit</button>
+  </div>
+  <div class = "row">
+    <p id = "menu">Weather:</p><p id = "desc2"></p>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
